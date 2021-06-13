@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/class-diagram
+class GetInputs
+class calculateSum
+class printOutput
+ GetInputs o-> calculateSum
+calculateSum o->GetInputs
+calculateSum o--> printOutput
+@enduml
