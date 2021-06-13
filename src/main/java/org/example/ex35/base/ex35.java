@@ -12,7 +12,7 @@ public class ex35 {
     private static ArrayList addContestants;
     private static int length = 1;
     public static void main(String[] args) {
-        winner example35 = new winner();
+
         String people[] = {""};
         readUserInput();
 

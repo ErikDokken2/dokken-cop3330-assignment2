@@ -11,7 +11,7 @@ public class ex36 {
 
     private static final Scanner in = new Scanner(System.in);
     private static ArrayList list;
-
+    private static ArrayList numArray = new ArrayList();
     private static int minNum;
     private static int maxNum= 0;
 
@@ -23,11 +23,11 @@ public class ex36 {
 
         int sum = calValues(input);
 
-        double deviation = ad2.std(input, averageNum, input.toArray().length,sum);
+        double deviation = ad2.std(input, averageNum, input.toArray().length);
 
         //Output
         String outputString = outputString(input,minNum,maxNum,averageNum,deviation);
-
+        System.out.println(list);
         printOutput(outputString);
 
     }
@@ -99,7 +99,7 @@ public class ex36 {
     }
     private static ArrayList readUserInput() {
         String input;
-        ArrayList numArray = new ArrayList();
+
 
         do{
             System.out.print("Enter a number: ");

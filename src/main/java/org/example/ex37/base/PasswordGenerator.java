@@ -7,7 +7,7 @@ public class PasswordGenerator {
     private static final String specCar[] = {"!","@","#","$","%","&","*","(",")","_","+","-","=","[","]","|",",",".","/","?",">","<"};
     public String passwordGen(String minLength, String specCharNum, String numCount) {
 
-        int minLenInt = Integer.parseInt(minLength);
+        int minLenInt = Integer.parseInt(minLength)-1;
         int numCountInt = Integer.parseInt(numCount);
         int specCharNumInt = Integer.parseInt(specCharNum);
         int maxLength = minLenInt +10;

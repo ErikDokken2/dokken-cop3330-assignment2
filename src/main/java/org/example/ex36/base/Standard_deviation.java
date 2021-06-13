@@ -3,7 +3,7 @@ package org.example.ex36.base;
 import java.util.ArrayList;
 
 public class Standard_deviation {
-    public double std(ArrayList input, double average, int length, int sum)
+    public double std(ArrayList input, double average, int length)
     {
         double standardDeviation = 0.0;
 
@@ -13,7 +13,7 @@ public class Standard_deviation {
 
         }
         double quo = standardDeviation/length;
-       double result = Math.sqrt(quo);
+        double result = Math.sqrt(quo);
 
         return result;
 
